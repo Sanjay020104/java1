@@ -1,0 +1,382 @@
+import java.util.Scanner;
+
+class ForLoop {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("number1: ");
+        int a = scan.nextInt();
+        System.out.println("number2: ");
+        int b = scan.nextInt();
+
+       
+        for (int i = a; i <= b; i++) {
+            System.out.println(i);
+        }
+
+        scan.close(); 
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------class ForLoop {
+    public static void main(String[] args) {
+        
+        for (int i = 1; i <= 10; i = i + 1) {
+            if (i % 2 == 0) {
+                System.out.println("even: " + i);
+            }
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------import java.util.Scanner;
+class ForLoop {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        
+        int[]mark = new int[5];
+        
+        for (int i = 0; i <= 4; i = i+1) 
+           {
+               mark[i] = scan.nextInt();
+            
+            }
+            System.out.println(mark[0]);
+            System.out.println(mark[1]);
+            System.out.println(mark[2]);
+            System.out.println(mark[3]);
+            System.out.println(mark[4]);
+           
+        
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+class ForLoop {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        
+        int[]mark = new int[10];
+        
+        for (int i = 0; i <= 9; i = i+1) 
+           {
+               mark[i] = scan.nextInt();
+            
+            }
+             for (int i = 0; i <= 9; i = i+1) 
+           {
+               System.out.print(i);
+             
+            
+            }
+           
+           
+        
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+class ForLoop {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        
+        int[]mark = new int[10];
+        
+        for (int i = 1; i <= 10; i = i+1) 
+           {
+             System.out.println(i+"x2"+i*2);
+            
+            }
+           
+        
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------public static void main(String[] args) {
+        Scanner scan = new Scanner (System.in);
+        int num = scan.nextInt();
+        int[]mark = new int[10];
+        
+        for (int i = 1; i <= 10; i = i+1) 
+           {
+               if(num == 1){
+                   System.out.println(i+"x1="+i*1);
+                   
+               }
+                if(num == 2){
+                   System.out.println(i+"x2="+i*2);
+                   
+               }
+                if(num == 3){
+                   System.out.println(i+"x3="+i*3);
+                   
+               }
+                if(num == 4){
+                   System.out.println(i+"x4="+i*4);
+                   
+               }
+                if(num == 5){
+                   System.out.println(i+"x5="+i*5);
+                   
+               }
+               
+             
+            
+            }
+           
+        
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------class nestedforloop{
+    public static void main (String[]arg){
+        
+        
+        for (int Y=1;Y<=3;Y=Y+1){
+            System.out.print("*");
+            
+            for (int i=1;i<=3;i=i+1){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------class nestedforloop{
+    public static void main (String[]arg){
+        
+        
+        for (int Y=1;Y<=3;Y=Y+1){
+          
+            
+            for (int i=1;i<=Y;i=i+1){
+                System.out.print("*");
+                
+            }
+            
+            System.out.println();
+        }
+        
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+import java.util.Random;
+class nestedforloop{
+    public static void main (String[]arg){
+        Random rand = new Random ();
+        int numnum = 0;
+        
+        while(numnum!=10){
+            numnum = rand.nextInt(11);
+            System.out.println(numnum);
+        }
+    }
+} 
+---------------------------------------------------------------------------------------------------------------------------------------------import java.util.Scanner;
+class nestedforloop{
+    public static void main (String[]arg){
+        Scanner scan = new Scanner(System.in);
+       int count = 0;
+        
+        do{
+            System.out.println("Enter the <10:");
+            count = scan.nextInt();
+        }while(count<20);
+    }
+} 
+---------------------------------------------------------------------------------------------------------------------------------------------public class laptop{
+    String name ="";
+    String Proc ="";
+    int price = 0;
+    int ram = 0;
+    
+    
+    
+    public static void main (String arg[]){
+        
+    //object for class
+    laptop lap1 = new laptop();
+    
+    lap1.name ="lenovo";
+    lap1.proc ="i5";
+    lap1.price = 200000;
+    lap1.ram = 5;
+    
+    System.out.println(lap1);
+    
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------public class mobile {
+    void iphone() {
+        System.out.println("this is iphone");
+    }
+    
+    void samsung() {
+        System.out.println("this is samsung");
+    }
+
+    void vivo() {
+        System.out.println("this is vivo");
+    }
+    
+    public static void main(String[] arg) {
+        mobile mob1 = new mobile();
+        
+        mob1.iphone();
+        mob1.samsung(); 
+        mob1.vivo();
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------
+public class addition{
+    void sum(){
+        int a=10;
+        int b=20;
+        int c=a+b;
+        System.out.println(c);
+    }
+    
+    public static void main (String []arg){
+        
+        addition add = new addition();
+        
+        add.sum();
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------public class garden{
+    int apple_price=5;
+    int apple_count=20;
+    
+    void total_money(){
+        System.out.println(apple_price*apple_count);
+    }
+    
+    public static void main (String arg[]){
+        
+        garden obj = new garden();
+        
+        obj.total_money();
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------import java.util.Scanner;
+public class shop{
+    
+    void get_chocolate(int money){
+        System.out.println(money);
+        System.out.println("chocolate purches");
+    }
+     void get_powder(int money){
+        System.out.println(money);
+        System.out.println("powder purches");
+    }
+    
+    public static void main (String arg[]){
+        
+        shop obj = new shop();
+         Scanner scan = new Scanner(System.in);
+        
+        obj.get_chocolate(scan.nextInt());
+        obj.get_powder(scan.nextInt());
+    }
+}
+----------------------------------------------------------------------------------------------import java.util.Scanner;
+public class call{
+    
+    int sum ()
+    {
+        Scanner scan = new Scanner(System.in);
+        int num1=scan.nextInt();
+        int num2=scan.nextInt();
+        int num3=num1+num2;
+        return num3;
+    }
+    
+    public static void main (String []arg){
+        
+        call obj1 = new call();
+        int add = obj1.sum();
+        System.out.println(add);
+    }
+}
+----------------------------------------------------------------------------------------------public class call{
+    
+    String getname ()
+    {
+        return"sanjay";
+    }
+    
+    public static void main (String []arg){
+        
+        call obj1 = new call();
+        String myname = obj1.getname();
+        System.out.println(myname);
+    }
+}
+----------------------------------------------------------------------------------------------import java.util.Scanner;
+
+public class find{
+    void evanorodd(int num)
+    {
+        if(num%2==0){
+            System.out.println("even");
+            
+        }
+        else{
+            System.out.println("add");
+        }
+    }
+    public static void main(String arg[]){
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+        
+        find obj1 = new find();
+        
+
+        obj1.evanorodd(number);
+        
+    }
+}
+----------------------------------------------------------------------------------------------import java.util.Scanner;
+
+class School {
+    
+    String passOrFail(int score) {  
+        if (score > 30) {
+            return "Pass";  
+        } else {
+            return "Fail";
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter your total marks: ");
+        int totalMark = scan.nextInt(); 
+        School obj = new School(); 
+
+        String result = obj.passOrFail(totalMark);
+        System.out.println("result:"+result); 
+        scan.close(); 
+    }
+}
+----------------------------------------------------------------------------------------------class addition{
+    
+    void sum(int a, int b)
+    {
+        
+        System.out.println(a+b);
+    }
+    
+    void sum(int a, int b, int c)
+    {
+        
+        System.out.println(a+b+c);
+    }
+    
+    public static void main(String[]arg)
+    {
+        
+        addition objt = new addition();
+        objt.sum(38,29);
+        objt.sum(38,29,39);
+    }
+}
+---------------------------------------------------------------------------------------------------
+
