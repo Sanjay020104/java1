@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class Sanjay { 
+    
+    String arr(String name) {
+        String expectedValue = "sanjay";  
+
+        if (name.equals(expectedValue)) { 
+            return "He is so handsome";
+        } else {
+            return "Not bad";
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in); 
+        System.out.print("Enter a name: ");
+        String name = scan.nextLine(); 
+
+        Sanjay objt = new Sanjay(); 
+        String result = objt.arr(name); 
+
+        System.out.println(result);
+        scan.close(); 
+    }
+}
